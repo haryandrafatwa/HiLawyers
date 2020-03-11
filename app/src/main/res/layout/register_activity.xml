@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_register"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:theme="@style/ToolbarTheme">
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:fontFamily="@font/rokkitt_medium"
+            android:layout_marginLeft="40dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_hai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hai Pengguna HiLawyers, Silahkan Mendaftar!"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:fontFamily="@font/ropasans_regular"
+        android:layout_below="@+id/toolbar_register"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/tv_hai">
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="@font/ropasans_regular"/>
+
+        <EditText
+            android:id="@+id/et_email_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_email"
+            android:padding="10dp"
+            android:layout_marginTop="4dp"
+            android:hint="ex. lawyersku@robot.co.id"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:background="@drawable/bg_edittext" />
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_below="@id/et_email_register"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="@font/ropasans_regular"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/et_password_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_password"
+            android:padding="10dp"
+            android:layout_marginTop="4dp"
+            android:hint="●●●●●●●●●"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:background="@drawable/bg_edittext"
+            android:drawableEnd="@drawable/ic_visibility"/>
+
+        <TextView
+            android:id="@+id/tv_phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="@font/ropasans_regular"
+            android:layout_below="@id/et_password_register"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/et_phonenumber_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_phonenumber"
+            android:padding="10dp"
+            android:layout_marginTop="4dp"
+            android:hint="ex. +62 81311234567"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:background="@drawable/bg_edittext" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@+id/layout_form"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_btn_kuning"
+        android:padding="10dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/white"
+        android:layout_marginRight="100dp"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_register"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/tv_belumpunyaakun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sudah memiliki akun?"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/ropasans_regular"/>
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login Now"
+            android:textColor="@color/HijauTosca"
+            android:layout_below="@+id/tv_belumpunyaakun"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textSize="14dp"
+            android:fontFamily="@font/ropasans_regular"/>
+
+        <TextView
+            android:id="@+id/tv_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terms"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/ropasans_regular"
+            android:layout_below="@+id/tv_login"
+            android:gravity="center_horizontal"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

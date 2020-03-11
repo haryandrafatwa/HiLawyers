@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "395344902424",
+    "firebase_url": "https://hilawyers-telu.firebaseio.com",
+    "project_id": "hilawyers-telu",
+    "storage_bucket": "hilawyers-telu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395344902424:android:e07636751614ce19dac66d",
+        "android_client_info": {
+          "package_name": "com.example.hilawyers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395344902424-287icb7psidaeu6eu0hi56bk65jvbmo3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hilawyers",
+            "certificate_hash": "1cd1cd534a3902988e968b7f5f0ac35878da3e32"
+          }
+        },
+        {
+          "client_id": "395344902424-78u67om42tegfdiv2c3dvrgnbjsp28dd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA61ZN9awocRQUODMckv_EBuGH3ruRXy0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395344902424-78u67om42tegfdiv2c3dvrgnbjsp28dd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
